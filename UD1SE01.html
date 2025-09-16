@@ -186,6 +186,26 @@
         .slide p, .slide h3 { text-align: center; }
         .grid-item p, .grid-item h3 { text-align: left; }
 
+        .book-icon-link {
+            position: absolute;
+            bottom: 80px; /* Ajustado para estar encima de los botones de navegación */
+            right: 30px;
+            color: rgba(224, 224, 224, 0.7);
+            transition: color 0.3s ease;
+            z-index: 5;
+        }
+
+        .book-icon-link:hover {
+            color: #BB86FC;
+        }
+
+        .book-icon-link svg {
+            width: 3vw;
+            height: 3vw;
+            min-width: 40px;
+            min-height: 40px;
+        }
+
     </style>
 </head>
 <body>
@@ -195,6 +215,12 @@
         <h2>Digitalización - 4º de ESO</h2>
         <h1>Sesión 1: Del mundo real al digital</h1>
         <p>Situación de aprendizaje: "Prepara el sistema informático para el activismo digital"</p>
+        <a href="UD1-DIG4.pdf" target="_blank" class="book-icon-link" title="Abrir unidad didáctica">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+            </svg>
+        </a>
     </div>
 
     <!-- Diapositiva 2: Lluvia de Ideas -->
