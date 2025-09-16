@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación: Digitalización</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-image: url('http://start.docuware.com/hubfs/main%20image%20digital%20accounting.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        /* Add an overlay for readability */
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: -1;
+        }
+        .slide {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .slide.active {
+            display: block;
+            opacity: 1;
+        }
+        /* Custom styles for better presentation */
+        .card {
+            background-color: white;
+            border-radius: 1.5rem;
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+            transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: perspective(1000px) rotateX(2deg) rotateY(-2deg) scale(1.02);
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen p-8">
+
+    <main class="w-full max-w-6xl mx-auto">
+        <!-- Slide Container -->
+        <div id="presentation-container">
+            <!-- Slide 1: Welcome -->
+            <div class="slide active card p-8 md:p-12 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-teal-600 mb-4">¡Bienvenidos!</h1>
+
+                <p class="text-2xl md:text-3xl text-gray-700">Digitalización</p>
+                <p class="mt-4 text-gray-500 text-lg">Aprendiendo a ser ciudadanos críticos en un mundo conectado.</p>
+                <p class="mt-8 text-xl text-gray-600">Profesor: Rafael Heredia</p>
+            </div>
+
+            <!-- Slide 2: What is this subject? -->
+            <div class="slide card p-8 md:p-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">¿De qué va esta asignatura?</h2>
+                <div class="text-lg text-gray-700 space-y-4">
+                    <p>Más allá de saber usar un ordenador o un móvil, esta asignatura te dará las herramientas para desenvolverte en el mundo digital de forma <span class="font-semibold">ética, responsable, segura y crítica</span>. Es la formación que necesitas para ser un ciudadano del siglo XXI.</p>
+                    <ul class="list-disc list-inside space-y-3 pl-4">
+                        <li><span class="font-semibold text-green-600">Alfabetización digital y mediática:</span> Aprenderás a buscar, evaluar y gestionar la información que encuentras en internet, diferenciando las fuentes fiables de las que no lo son.</li>
+                         <li><span class="font-semibold text-purple-600">Creación de contenido digital:</span> Diseñarás y crearás tus propios contenidos en diferentes formatos (webs, imágenes, vídeos, podcasts...), aprendiendo a comunicar tus ideas de forma efectiva.</li>
+                        <li><span class="font-semibold text-orange-600">Seguridad y Bienestar Digital:</span> Protegerás tu identidad digital, gestionarás tu privacidad y aprenderás hábitos saludables para evitar los riesgos y la sobreexposición en el entorno online.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Slide 3: Main Blocks -->
+            <div class="slide card p-8 md:p-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Nuestros Bloques de Contenido</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 text-gray-700">
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <h3 class="font-bold text-blue-700">A. Digitalización del Entorno</h3>
+                        <p>Analizaremos cómo la tecnología digital está presente en nuestro día a día y cómo podemos usarla para resolver problemas cotidianos.</p>
+                    </div>
+                     <div class="bg-purple-50 p-4 rounded-lg">
+                        <h3 class="font-bold text-purple-700">B. Proyectos de Creación</h3>
+                        <p>¡Manos a la obra! Crearemos proyectos digitales desde la idea inicial hasta su publicación, usando diferentes herramientas y plataformas.</p>
+                    </div>
+                    <div class="bg-orange-50 p-4 rounded-lg">
+                        <h3 class="font-bold text-orange-700">C. Contenidos y Medios</h3>
+                        <p>Aprenderemos a crear y editar imágenes, audio y vídeo. También diseñaremos sitios web y gestionaremos su contenido.</p>
+                    </div>
+                    <div class="bg-green-50 p-4 rounded-lg">
+                        <h3 class="font-bold text-green-700">D. Ciudadanía Digital Segura</h3>
+                        <p>Nos centraremos en proteger nuestra identidad, gestionar la privacidad y reconocer los riesgos como el ciberacoso o la desinformación.</p>
+                    </div>
+                    <div class="bg-teal-50 p-4 rounded-lg col-span-1 md:col-span-2 lg:col-span-1">
+                        <h3 class="font-bold text-teal-700">E. Pensamiento Computacional</h3>
+                        <p>Usaremos la lógica de la programación para planificar proyectos, automatizar tareas y entender cómo funcionan las apps que usamos.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 4: 4th Year ESO -->
+            <div class="slide card p-8 md:p-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-2 text-center">¿Qué haremos en 4º de la ESO?</h2>
+                <p class="text-center text-gray-500 mb-6">Nos convertiremos en creadores y gestores de nuestra propia presencia online.</p>
+                <ul class="text-lg text-gray-700 list-disc list-inside space-y-3">
+                    <li><span class="font-semibold">Crear y gestionar un sitio web o blog:</span> Aprenderás a usar plataformas como WordPress o Google Sites para diseñar, publicar y mantener tu propio espacio en internet.</li>
+                    <li><span class="font-semibold">Producir contenido multimedia:</span> Editaremos imágenes con software de diseño, crearemos pequeños vídeos o animaciones y grabaremos y editaremos podcasts.</li>
+                    <li><span class="font-semibold">Analizar datos y visualizarlos:</span> Recogeremos datos (por ejemplo, de una encuesta) y usaremos hojas de cálculo para organizarlos y crear gráficos que cuenten una historia.</li>
+                    <li><span class="font-semibold">Colaborar en proyectos online:</span> Usaremos herramientas en la nube para trabajar en equipo de forma remota, gestionando tareas y compartiendo documentos de forma eficiente y segura.</li>
+                </ul>
+            </div>
+
+            <!-- Slide 5: 4th Year ESO Saberes y Criterios -->
+            <div class="slide card p-8 md:p-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">4º ESO: Nuestro "mapa" oficial</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="font-bold text-xl text-blue-700 mb-3">Saberes Básicos (Lo que vamos a aprender)</h3>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700">
+                            <li>Gestión de la identidad digital y la reputación online.</li>
+                            <li>Estrategias para la protección de datos y dispositivos.</li>
+                            <li>Creación de contenidos multimedia (imagen, audio, vídeo).</li>
+                            <li>Uso de plataformas web y redes sociales de forma crítica.</li>
+                            <li>Herramientas de trabajo colaborativo en la nube.</li>
+                            <li>Visualización de datos y hojas de cálculo.</li>
+                            <li>Propiedad intelectual, licencias de uso (Creative Commons).</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-xl text-green-700 mb-3">Criterios de Evaluación (Lo que demostrarás saber)</h3>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700">
+                            <li>Gestionar de forma segura y responsable tu propia identidad digital.</li>
+                            <li>Crear y publicar contenidos en diferentes formatos respetando los derechos de autor.</li>
+                            <li>Utilizar herramientas digitales para resolver problemas y optimizar tareas.</li>
+                            <li>Colaborar en equipo en entornos virtuales para realizar un proyecto.</li>
+                            <li>Analizar y representar datos usando hojas de cálculo.</li>
+                            <li>Identificar y aplicar medidas de seguridad para protegerte de riesgos online.</li>
+                        </ul>
+                    </div>
+                </div>
+                 <div class="mt-6 text-center">
+                    <a href="DIG4.pdf" target="_blank" class="inline-block bg-blue-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-700 transition">
+                        Ver Documento Oficial (BOJA)
+                    </a>
+                </div>
+            </div>
+
+            <!-- Slide 6: How will we work? -->
+            <div class="slide card p-8 md:p-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Nuestra forma de trabajar</h2>
+                <div class="w-full text-lg text-gray-700 space-y-4">
+                    <div class="flex items-start">
+                        <span class="text-blue-500 mr-3 text-2xl">➔</span>
+                        <p><span class="font-bold">Aprendizaje Basado en Proyectos Reales:</span> Trabajaremos en proyectos como "Crear una campaña de concienciación en redes sociales" o "Lanzar un blog sobre un tema que nos apasione".</p>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-blue-500 mr-3 text-2xl">➔</span>
+                        <p><span class="font-bold">Portfolio Digital:</span> Cada uno creará su propio portfolio online donde irá publicando los trabajos y proyectos del curso. Será vuestra carta de presentación digital.</p>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-blue-500 mr-3 text-2xl">➔</span>
+                        <p><span class="font-bold">Aprender Haciendo (Learning by Doing):</span> La mayor parte del tiempo estaremos creando, configurando y publicando. La teoría la aplicaremos directamente en la práctica.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 7: Our Workspaces -->
+            <div class="slide card p-8 md:p-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Nuestros Espacios de Trabajo</h2>
+                <div class="flex justify-center text-lg">
+                    <div>
+                        <ul class="space-y-6 text-gray-700">
+                           <li class="flex items-center text-xl"><span class="text-4xl mr-4">🏫</span><div><span class="font-bold">Aula:</span> Aquí debatiremos sobre temas de actualidad digital, pondremos ideas en común y planificaremos nuestros proyectos.</div></li>
+                           <li class="flex items-center text-xl"><span class="text-4xl mr-4">💻</span><div><span class="font-bold">Aula de Informática:</span> Nuestro centro de creación, donde diseñaremos, programaremos y daremos vida a nuestros proyectos digitales.</div></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 8: Evaluation -->
+            <div class="slide card p-8 md:p-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">¿Cómo se evaluará? (La nota)</h2>
+                 <p class="text-center text-gray-600 mb-6">Se valorará tu capacidad para crear, comunicar y actuar de forma segura en el entorno digital.</p>
+                <div class="grid grid-cols-2 gap-6 text-center">
+                    <div class="bg-blue-50 p-6 rounded-lg">
+                        <p class="text-4xl font-bold text-blue-600">60%</p>
+                        <h3 class="font-semibold mt-2">Portfolio de Proyectos</h3>
+                        <p class="text-sm text-gray-600">El conjunto de trabajos prácticos (web, vídeos, diseños...) que desarrollarás durante el curso.</p>
+                    </div>
+                    <div class="bg-green-50 p-6 rounded-lg">
+                        <p class="text-4xl font-bold text-green-600">20%</p>
+                        <h3 class="font-semibold mt-2">Actividades y Retos</h3>
+                        <p class="text-sm text-gray-600">Ejercicios más cortos para practicar habilidades concretas (ej. detectar una fake new, editar una imagen).</p>
+                    </div>
+                    <div class="bg-orange-50 p-6 rounded-lg">
+                        <p class="text-4xl font-bold text-orange-600">20%</p>
+                        <h3 class="font-semibold mt-2">Participación y Actitud Crítica</h3>
+                        <p class="text-sm text-gray-600">Tu implicación en los debates, cómo colaboras y tu capacidad para analizar la tecnología de forma reflexiva.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 9: Materials -->
+            <div class="slide card p-8 md:p-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">¿Qué necesitarás? (Tus herramientas)</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-lg">
+                    <div>
+                        <h3 class="font-semibold text-blue-700 mb-3 text-center">🎒 En tu mochila (Material individual)</h3>
+                        <ul class="space-y-3 text-gray-700">
+                           <li class="flex items-center"><span class="text-2xl mr-3">📓</span> Cuaderno para tomar notas y planificar tus creaciones.</li>
+                           <li class="flex items-center"><span class="text-2xl mr-3">✏️</span> Lápiz, goma y bolígrafos.</li>
+                           <li class="flex items-center"><span class="text-2xl mr-3">💾</span> Un Pendrive para guardar copias de tus trabajos.</li>
+                           <li class="flex items-center"><span class="text-2xl mr-3">🎧</span> Auriculares (con cable) para cuando trabajemos con audio o vídeo.</li>
+                           <li class="flex items-center"><span class="text-2xl mr-3">🧐</span> ¡Y sobre todo: una mente abierta, curiosa y crítica!</li>
+                        </ul>
+                    </div>
+                    <div class="border-t md:border-t-0 md:border-l border-gray-200 pt-6 md:pt-0 md:pl-8">
+                        <h3 class="font-semibold text-green-700 mb-3 text-center">🛠️ En el aula (Material colectivo)</h3>
+                         <ul class="space-y-3 text-gray-700">
+                           <li class="flex items-center"><span class="text-2xl mr-3">💻</span> Ordenadores con conexión a internet y el software necesario.</li>
+                           <li class="flex items-center"><span class="text-2xl mr-3">🌐</span> Acceso a plataformas online de diseño, vídeo, webs, etc.</li>
+                           <li class="flex items-center"><span class="text-2xl mr-3">📷</span> Disponibilidad de cámaras o móviles para grabar.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 10: Recommendations -->
+            <div class="slide card p-8 md:p-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Recomendaciones para tener éxito</h2>
+                <div class="space-y-4 text-lg text-gray-700">
+                    <div class="flex items-center bg-gray-50 p-4 rounded-lg">
+                        <span class="text-3xl mr-4">🔎</span>
+                        <div><span class="font-bold">Verifica antes de compartir:</span> Conviértete en un detective de la información. Cuestiona lo que lees y busca siempre la fuente original.</div>
+                    </div>
+                    <div class="flex items-center bg-gray-50 p-4 rounded-lg">
+                        <span class="text-3xl mr-4">👣</span>
+                        <div><span class="font-bold">Cuida tu huella digital:</span> Todo lo que publicas en internet deja un rastro. Piensa dos veces antes de publicar y configura bien tu privacidad.</div>
+                    </div>
+                    <div class="flex items-center bg-gray-50 p-4 rounded-lg">
+                        <span class="text-3xl mr-4">✨</span>
+                        <div><span class="font-bold">Experimenta y sé creativo:</span> No tengas miedo de probar herramientas nuevas. La mejor forma de aprender es trasteando y creando sin parar.</div>
+                    </div>
+                    <div class="flex items-center bg-gray-50 p-4 rounded-lg">
+                        <span class="text-3xl mr-4">🗣️</span>
+                        <div><span class="font-bold">Participa y respeta:</span> El debate enriquece. Comparte tu opinión de forma respetuosa y escucha activamente las de los demás.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 11: Why is it important? -->
+            <div class="slide card p-8 md:p-12">
+                 <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">¿Y esto... para qué me sirve?</h2>
+                 <p class="text-lg text-center text-gray-600 mb-8">Estas habilidades son esenciales para estudiar, trabajar y vivir en el mundo actual:</p>
+                 <div class="grid grid-cols-2 md:grid-cols-3 gap-6 text-center">
+                     <div class="bg-gray-50 p-4 rounded-lg">
+                        <p class="text-3xl">🎯</p>
+                        <p class="font-semibold mt-2">Comunicación Efectiva</p>
+                         <p class="text-sm text-gray-600">Sabrás cómo transmitir tus ideas en el lenguaje de internet.</p>
+                     </div>
+                     <div class="bg-gray-50 p-4 rounded-lg">
+                        <p class="text-3xl">🛡️</p>
+                        <p class="font-semibold mt-2">Autoprotección</p>
+                         <p class="text-sm text-gray-600">Navegarás de forma más segura, evitando estafas y riesgos.</p>
+                     </div>
+                     <div class="bg-gray-50 p-4 rounded-lg">
+                        <p class="text-3xl">📈</p>
+                        <p class="font-semibold mt-2">Mejora Académica</p>
+                         <p class="text-sm text-gray-600">Harás mejores trabajos para otras asignaturas y sabrás investigar mejor.</p>
+                     </div>
+                     <div class="bg-gray-50 p-4 rounded-lg">
+                        <p class="text-3xl">💼</p>
+                        <p class="font-semibold mt-2">Preparación Laboral</p>
+                         <p class="text-sm text-gray-600">Casi cualquier trabajo hoy en día requiere estas competencias.</p>
+                     </div>
+                      <div class="bg-gray-50 p-4 rounded-lg">
+                        <p class="text-3xl">🌍</p>
+                        <p class="font-semibold mt-2">Ciudadanía Activa</p>
+                         <p class="text-sm text-gray-600">Podrás participar en la sociedad digital de forma informada y crítica.</p>
+                     </div>
+                     <div class="bg-gray-50 p-4 rounded-lg">
+                        <p class="text-3xl">💡</p>
+                        <p class="font-semibold mt-2">Creatividad</p>
+                         <p class="text-sm text-gray-600">Tendrás las herramientas para dar forma a cualquier idea que se te ocurra.</p>
+                     </div>
+                 </div>
+            </div>
+
+            <!-- Slide 12: Activity -->
+            <div class="slide card p-8 md:p-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Actividad Práctica: Mi Huella Digital</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-lg">
+                    <div>
+                        <h3 class="font-semibold text-blue-700 mb-3">🎯 Objetivo</h3>
+                        <p class="text-gray-700">Reflexionar sobre la información que compartimos en internet y cómo nos ven los demás a través de ella.</p>
+            
+                        <h3 class="font-semibold text-blue-700 mb-3 mt-6">📜 Pasos</h3>
+                        <ol class="list-decimal list-inside space-y-2 text-gray-700">
+                            <li><strong>Búsqueda anónima:</strong> Abre una ventana de incógnito en el navegador y busca tu nombre y apellidos. ¿Qué aparece? ¿Y si buscas tu nombre de usuario en redes sociales?</li>
+                            <li><strong>Análisis (5 min):</strong> En tu cuaderno, apunta 3-5 cosas que alguien podría deducir de ti solo con esa búsqueda (aficiones, amigos, lugares...).</li>
+                            <li><strong>Puesta en común:</strong> De forma voluntaria, compartiremos en voz alta (sin dar detalles personales) qué nos ha sorprendido de lo que hemos encontrado.</li>
+                        </ol>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg flex flex-col justify-center items-center">
+                        <h3 class="font-semibold text-center text-green-700 mb-3">🤔 Para reflexionar...</h3>
+                        <p class="text-center text-gray-600">¿La imagen que proyectas online es la que quieres dar? ¿Controlas toda la información que hay sobre ti en la red?</p>
+                        <span class="text-6xl mt-6">👣</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 13: Final -->
+            <div class="slide card p-8 md:p-12 text-center">
+                <h2 class="text-5xl font-bold text-gray-800 mb-6">¿Alguna pregunta?</h2>
+                <p class="text-2xl text-blue-600 font-semibold">Vamos a construir juntos una presencia digital positiva y segura. ¡Empezamos!</p>
+            </div>
+
+        </div>
+
+        <!-- Navigation -->
+        <div class="flex justify-between mt-8">
+            <button id="prevBtn" class="bg-white text-blue-600 font-bold py-2 px-6 rounded-full shadow-md hover:bg-blue-50 transition disabled:opacity-50 disabled:cursor-not-allowed">
+                Anterior
+            </button>
+            <div id="slide-counter" class="flex items-center text-white font-semibold"></div>
+            <button id="nextBtn" class="bg-blue-600 text-white font-bold py-2 px-6 rounded-full shadow-md hover:bg-blue-700 transition">
+                Siguiente
+            </button>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const slides = document.querySelectorAll('.slide');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const slideCounter = document.getElementById('slide-counter');
+            let currentSlide = 0;
+
+            function showSlide(n) {
+                // Hide all slides
+                slides.forEach(slide => {
+                    slide.classList.remove('active');
+                });
+                // Show the target slide
+                slides[n].classList.add('active');
+                updateNav();
+            }
+
+            function updateNav() {
+                // Update slide counter
+                slideCounter.textContent = `${currentSlide + 1} / ${slides.length}`;
+
+                // Update button states
+                if (currentSlide === 0) {
+                    prevBtn.disabled = true;
+                } else {
+                    prevBtn.disabled = false;
+                }
+
+                if (currentSlide === slides.length - 1) {
+                    nextBtn.textContent = 'Finalizar';
+                } else {
+                    nextBtn.textContent = 'Siguiente';
+                }
+            }
+
+            nextBtn.addEventListener('click', () => {
+                if (currentSlide < slides.length - 1) {
+                    currentSlide++;
+                    showSlide(currentSlide);
+                }
+            });
+
+            prevBtn.addEventListener('click', () => {
+                if (currentSlide > 0) {
+                    currentSlide--;
+                    showSlide(currentSlide);
+                }
+            });
+
+            // Initial setup
+            showSlide(currentSlide);
+        });
+    </script>
+</body>
+</html>
